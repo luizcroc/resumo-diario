@@ -126,16 +126,19 @@ e o que monitorar nos próximos dias com data/evento específico quando houver]
 - Linguagem: português brasileiro; termos técnicos econômicos/políticos em português
 - Não repetir o mesmo fato em blocos diferentes — se for relevante para dois blocos, aprofundar ângulos distintos em cada um
 
-## Saída adicional (opcional, requer configuração própria no Claude Code)
+## Passo 5 — Publicar (obrigatório)
 
-Se desejar reproduzir o fluxo completo do Cowork (atualizar uma página HTML e enviar por e-mail),
-adicione ao final da execução:
+Ao final da execução, depois de redigir o resumo no formato acima:
 
-1. Escrever o resumo em HTML autocontido (ver `resumo-diario.html` de referência) sobrescrevendo
-   o arquivo do repositório/pasta hospedada (GitHub Pages, servidor local, etc.).
-2. Enviar por e-mail usando um MCP server de Gmail configurado no Claude Code (`claude mcp add`),
-   com assunto `📰 Resumo Diário — DD/MM/AAAA` e corpo em HTML.
+1. Preencher o arquivo `docs/index.html` deste repositório com o conteúdo do dia, mantendo a
+   mesma estrutura visual (CSS, seções, badges de tendência) já presente no arquivo — trocar
+   apenas o conteúdo de cada `<div class="item">`, os valores de câmbio, o `<title>` e a data no
+   `<header>`. Não alterar `<style>` nem a estrutura de tags.
+2. Rodar, na raiz do repositório:
+   git add docs/index.html
+   git commit -m "Resumo diário — DD/MM/AAAA"
+   git push
+3. Se `git push` falhar (sem rede, conflito, credencial), registrar o erro claramente na resposta
+   final ao usuário — não tentar --force nem ignorar a falha silenciosamente.
 
-Esses dois passos dependem de infraestrutura própria do usuário (hospedagem + MCP de Gmail) — não
-existem nativamente no Claude Code como existem no Cowork (artifact hospedado + conector Gmail
-prontos). Ver guia de migração para detalhes.
+URL pública: https://luizcroc.github.io/resumo-diario/
