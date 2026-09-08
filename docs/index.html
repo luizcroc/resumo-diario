@@ -140,15 +140,23 @@
 </header>
 
 <div class="aviso">
-  ⚠️ Bloco de aviso opcional — use para registrar ressalvas de fonte (ex.: PTAX indisponível, fallback usado).
+  ⚠️ API PTAX do Banco Central retornou vazio nesta rodada (dados do dia possivelmente ainda não publicados) — câmbio abaixo vem de agregadores de mercado (fallback), sem série histórica de 30 dias.
 </div>
 
 <!-- BRASIL — POLÍTICA -->
 <div class="section">
   <h2>📍 Brasil — Política</h2>
   <div class="item">
-    <strong>Título do item</strong>
-    <p>Texto do item com fato, contexto, atores e próximo passo. <span class="tag-nexo">Nexo</span></p>
+    <strong>Crise entre Moraes e Mendonça vira combustível eleitoral no 7 de Setembro</strong>
+    <p>As revelações do caso Master — mensagens trocadas entre o ministro Alexandre de Moraes e o banqueiro Daniel Vorcaro — amplificaram críticas ao STF e pedidos de impeachment de Moraes. O senador Flávio Bolsonaro convocou manifestações na Av. Paulista com o lema "Fora Lula, Fora Moraes", incorporando apoio a Mendonça. A bancada do PL protocolou novo pedido de impeachment de Moraes no Senado e pediu investigação do diretor-geral da PF, Andrei Rodrigues, e do procurador-geral Paulo Gonet. Os atos serviram de termômetro para o presidente do STF, Edson Fachin, decidir como conduzir o conflito — decisão ainda pendente. <span class="tag-nexo">Nexo</span></p>
+  </div>
+  <div class="item">
+    <strong>Quaest mostra empate técnico entre Lula e Flávio Bolsonaro no 2º turno</strong>
+    <p>Pesquisa Quaest (Globo/Editora Globo, 2.004 entrevistados entre 30/08–01/09, margem de erro 2 p.p., confiança 95%) aponta Lula com 42% e Flávio Bolsonaro com 41% num eventual 2º turno — dentro da margem de erro. No 1º turno estimulado, Lula lidera com 37% e Flávio tem 30%; indecisos caíram de 51% (14/08) para 42%. <span class="tag-nexo">Nexo</span></p>
+  </div>
+  <div class="item">
+    <strong>Congresso adia PEC do fim da escala 6x1 para depois do 1º turno</strong>
+    <p>Líderes do Congresso sinalizaram possibilidade de votar o fim da escala 6x1 antes do 2º turno, mas a votação só deve retomar após o 1º turno — leitura é de que se trata de tentativa de evitar desgaste eleitoral em ano de disputa presidencial acirrada.</p>
   </div>
 </div>
 
@@ -156,8 +164,8 @@
 <div class="section economia">
   <h2>📍 Brasil — Economia</h2>
   <div class="item">
-    <strong>Título do item</strong>
-    <p>Texto do item.</p>
+    <strong>Boletim Focus: mercado reduz projeção de inflação para 2026, mas mantém Selic</strong>
+    <p>A projeção do IPCA para 2026 caiu de 5,01% para 5,00% — ainda acima do teto de 4,5% da meta. A Selic segue projetada em 13,75% a.a. até o fim de 2026, caindo para 12% em 2027 e 10,5% em 2028. A estimativa de câmbio de mercado para o fim do ano permanece em R$ 5,20/USD. O PIB projetado subiu de 1,92% para 1,93%. Fonte: Banco Central (Boletim Focus).</p>
   </div>
 </div>
 
@@ -167,28 +175,23 @@
   <div class="cambio-grid">
     <div class="cambio-card">
       <div class="pair">USD / BRL</div>
-      <div class="rate">R$ 0,0000</div>
-      <div class="sub">Hoje · variação no dia</div>
-      <div style="margin-top:6px"><span class="badge verde">VALORIZANDO</span></div>
+      <div class="rate">R$ 5,0900</div>
+      <div class="sub">Hoje · -0,81% no dia</div>
+      <div style="margin-top:6px"><span class="badge verde">VALORIZANDO (do real)</span></div>
     </div>
     <div class="cambio-card">
       <div class="pair">EUR / BRL</div>
-      <div class="rate">R$ 0,0000</div>
-      <div class="sub">Hoje · variação no dia</div>
-      <div style="margin-top:6px"><span class="badge verde">VALORIZANDO</span></div>
+      <div class="rate">R$ 5,9618</div>
+      <div class="sub">Hoje · faixa 5,9552–5,9653</div>
+      <div style="margin-top:6px"><span class="badge amarelo">SEM DADOS SUFICIENTES</span></div>
     </div>
   </div>
 
-  <table class="hist-table">
-    <tr><th>Data</th><th>USD/BRL</th><th>Var.</th><th>EUR/BRL</th><th>Var.</th></tr>
-    <tr><td>DD/MM</td><td>0,0000</td><td>0,00%</td><td>0,0000</td><td>0,00%</td></tr>
-  </table>
-
   <div class="hist-row" style="margin-top:10px">
-    <span>📊 Resumo da faixa/média de 30 dias.</span>
+    <span>📊 Série histórica de 30 dias indisponível nesta rodada (PTAX vazio) — fallback usado apenas para cotação do dia.</span>
   </div>
   <div class="hist-row" style="margin-top:4px">
-    <span>📈 Tendência e o que acompanhar.</span>
+    <span>📈 Tendência do USD classificada com base só na variação diária (-0,81%); sem base de 7/30 dias para o EUR, tendência não classificada com segurança.</span>
   </div>
 </div>
 
@@ -196,8 +199,12 @@
 <div class="section mundo">
   <h2>📍 Mundo</h2>
   <div class="item">
-    <strong>Título do item</strong>
-    <p>Texto do item.</p>
+    <strong>AfD (extrema direita) vence eleição regional na Saxônia-Anhalt, leste da Alemanha</strong>
+    <p>O partido obteve 46% dos votos (79% apurados) contra 16% da CDU do chanceler Friedrich Merz, conquistando 39 cadeiras no parlamento estadual — resultado histórico, primeira vez que o AfD pode governar um estado desde sua fundação em 2013. Sem maioria absoluta, precisa de apoio de outras legendas; partidos tradicionais mantêm o "cordão sanitário" que isola a extrema direita desde a 2ª Guerra Mundial. <span class="tag-nexo">Nexo</span></p>
+  </div>
+  <div class="item">
+    <strong>Trump declara "fim da guerra" em Gaza após acordo de cessar-fogo</strong>
+    <p>Durante viagem a Israel e Egito para cúpula com líderes mundiais, Trump assinou documento declarando o "fim" do conflito. A libertação dos últimos 20 reféns israelenses vivos e de cerca de dois mil prisioneiros/detidos palestinos, na semana anterior, marcou o momento decisivo do acordo. O desarmamento do Hamas segue como questão central em aberto.</p>
   </div>
 </div>
 
@@ -205,19 +212,19 @@
 <div class="section outros">
   <h2>📍 Outros Destaques</h2>
   <div class="item">
-    <strong>Título do item</strong>
-    <p>Texto do item.</p>
+    <strong>Sem itens aprofundados nesta rodada</strong>
+    <p>Execução de teste priorizou política, economia e mundo; uma rodada de produção cobriria também tecnologia, saúde e clima.</p>
   </div>
 </div>
 
 <!-- ANÁLISE RÁPIDA -->
 <div class="section analise">
   <h2>🔍 Análise Rápida</h2>
-  <p style="font-size:0.87rem; color:#444;">Texto da análise.</p>
+  <p style="font-size:0.87rem; color:#444;">A crise Moraes-Mendonça no STF se fundiu ao calendário eleitoral: tanto a direita usando o caso Master para pressionar Moraes quanto o empate técnico Lula-Flávio na Quaest mostram uma eleição 2026 cada vez mais polarizada e sensível a decisões do Judiciário — a decisão de Fachin pode virar, ela mesma, fato eleitoral. Na economia, a Selic em 13,75% sinaliza cautela do BC mesmo com leve melhora da inflação, o que tende a sustentar o real no curto prazo, ainda que o mercado já projete câmbio mais depreciado (R$ 5,20) até o fim do ano. No exterior, o avanço do AfD na Saxônia-Anhalt ecoa a mesma onda de extrema direita destacada pelo Nexo — vale monitorar conexões com o debate eleitoral brasileiro. Em Gaza, apesar do cessar-fogo anunciado, o desarmamento do Hamas segue como ponto de tensão a acompanhar.</p>
 </div>
 
 <div class="fontes">
-  <strong>Fontes consultadas:</strong> lista de fontes.
+  <strong>Fontes consultadas:</strong> Congresso em Foco, Correio Braziliense, Brasil 247, O Povo/BBC, InfoMoney, Agência Brasil, Gazeta do Povo, CartaCapital, CNN Brasil, Portal Tela, Brasil de Fato, Observador — além de newsletter do Nexo Jornal (Gmail). Sem newsletter da Piauí nas últimas 48h.
 </div>
 
 </body>
