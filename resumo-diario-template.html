@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📰 Resumo Diário — 08/09/2026</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f8f9fa;
+    color: #1a1a2e;
+    line-height: 1.6;
+    padding: 16px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+  }
+  header h1 { font-size: 1.4rem; font-weight: 700; letter-spacing: 0.3px; }
+  header .meta { font-size: 0.82rem; color: #a8b4c8; margin-top: 4px; }
+  .section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    border-left: 4px solid #4361ee;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .section.economia { border-left-color: #2ec4b6; }
+  .section.mundo { border-left-color: #e94560; }
+  .section.outros { border-left-color: #f4a261; }
+  .section.cambio { border-left-color: #7b2d8b; }
+  .section.analise { border-left-color: #adb5bd; background: #f8f9fa; }
+  .section h2 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #4361ee;
+    margin-bottom: 14px;
+  }
+  .section.economia h2 { color: #2ec4b6; }
+  .section.mundo h2 { color: #e94560; }
+  .section.outros h2 { color: #f4a261; }
+  .section.cambio h2 { color: #7b2d8b; }
+  .section.analise h2 { color: #6c757d; }
+  .item { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid #f0f0f0; }
+  .item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .item strong { display: block; font-size: 0.93rem; color: #1a1a2e; margin-bottom: 4px; }
+  .item p { font-size: 0.87rem; color: #444; }
+
+  /* CÂMBIO */
+  .cambio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .cambio-card {
+    background: #f8f0ff;
+    border-radius: 8px;
+    padding: 12px 16px;
+    text-align: center;
+  }
+  .cambio-card .pair { font-size: 0.75rem; color: #7b2d8b; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+  .cambio-card .rate { font-size: 1.7rem; font-weight: 800; color: #1a1a2e; line-height: 1.2; }
+  .cambio-card .sub { font-size: 0.78rem; color: #888; margin-top: 2px; }
+  .badge {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 12px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .badge.verde { background: #d1fae5; color: #065f46; }
+  .badge.vermelho { background: #fee2e2; color: #991b1b; }
+  .badge.amarelo { background: #fef3c7; color: #92400e; }
+  .hist-row { display: flex; justify-content: space-between; font-size: 0.8rem; color: #666; margin-top: 8px; }
+  .hist-row span { display: inline-block; }
+  .hist-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.76rem; }
+  .hist-table th, .hist-table td { text-align: right; padding: 3px 6px; border-bottom: 1px solid #f0e6f7; }
+  .hist-table th:first-child, .hist-table td:first-child { text-align: left; }
+  .hist-table th { color: #7b2d8b; font-weight: 700; }
+
+  .fontes {
+    font-size: 0.76rem;
+    color: #888;
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 6px;
+  }
+  .fontes strong { color: #555; }
+  .tag-nexo {
+    display: inline-block;
+    background: #e8f4fd;
+    color: #1565c0;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 1px 7px;
+    border-radius: 10px;
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+  .tag-piaui {
+    display: inline-block;
+    background: #fde8f0;
+    color: #a3145c;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 1px 7px;
+    border-radius: 10px;
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+  .aviso {
+    font-size: 0.8rem;
+    color: #92400e;
+    background: #fef3c7;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📰 Resumo Diário — 08/09/2026</h1>
+  <div class="meta">Terça-feira · Gerado automaticamente · Fontes: busca web + Gmail (Nexo Jornal)</div>
+</header>
+
+<div class="aviso">
+  ⚠️ Bloco de aviso opcional — use para registrar ressalvas de fonte (ex.: PTAX indisponível, fallback usado).
+</div>
+
+<!-- BRASIL — POLÍTICA -->
+<div class="section">
+  <h2>📍 Brasil — Política</h2>
+  <div class="item">
+    <strong>Título do item</strong>
+    <p>Texto do item com fato, contexto, atores e próximo passo. <span class="tag-nexo">Nexo</span></p>
+  </div>
+</div>
+
+<!-- BRASIL — ECONOMIA -->
+<div class="section economia">
+  <h2>📍 Brasil — Economia</h2>
+  <div class="item">
+    <strong>Título do item</strong>
+    <p>Texto do item.</p>
+  </div>
+</div>
+
+<!-- CÂMBIO -->
+<div class="section cambio">
+  <h2>💱 Câmbio — BRL/USD e BRL/EUR</h2>
+  <div class="cambio-grid">
+    <div class="cambio-card">
+      <div class="pair">USD / BRL</div>
+      <div class="rate">R$ 0,0000</div>
+      <div class="sub">Hoje · variação no dia</div>
+      <div style="margin-top:6px"><span class="badge verde">VALORIZANDO</span></div>
+    </div>
+    <div class="cambio-card">
+      <div class="pair">EUR / BRL</div>
+      <div class="rate">R$ 0,0000</div>
+      <div class="sub">Hoje · variação no dia</div>
+      <div style="margin-top:6px"><span class="badge verde">VALORIZANDO</span></div>
+    </div>
+  </div>
+
+  <table class="hist-table">
+    <tr><th>Data</th><th>USD/BRL</th><th>Var.</th><th>EUR/BRL</th><th>Var.</th></tr>
+    <tr><td>DD/MM</td><td>0,0000</td><td>0,00%</td><td>0,0000</td><td>0,00%</td></tr>
+  </table>
+
+  <div class="hist-row" style="margin-top:10px">
+    <span>📊 Resumo da faixa/média de 30 dias.</span>
+  </div>
+  <div class="hist-row" style="margin-top:4px">
+    <span>📈 Tendência e o que acompanhar.</span>
+  </div>
+</div>
+
+<!-- MUNDO -->
+<div class="section mundo">
+  <h2>📍 Mundo</h2>
+  <div class="item">
+    <strong>Título do item</strong>
+    <p>Texto do item.</p>
+  </div>
+</div>
+
+<!-- OUTROS DESTAQUES -->
+<div class="section outros">
+  <h2>📍 Outros Destaques</h2>
+  <div class="item">
+    <strong>Título do item</strong>
+    <p>Texto do item.</p>
+  </div>
+</div>
+
+<!-- ANÁLISE RÁPIDA -->
+<div class="section analise">
+  <h2>🔍 Análise Rápida</h2>
+  <p style="font-size:0.87rem; color:#444;">Texto da análise.</p>
+</div>
+
+<div class="fontes">
+  <strong>Fontes consultadas:</strong> lista de fontes.
+</div>
+
+</body>
+</html>
